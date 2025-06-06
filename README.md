@@ -1,7 +1,7 @@
 # High-Accuracy Air-Quality Forecasting with a **PCDCNet-Inspired LSTM**
 
-![Training & Validation Loss](plots/graph1.png)
-![Prediction vs Actual](plots/graph2.png)
+![Predicted VS Actual](plots/image.png)
+![Decrease in MAE](plots/graph2.png)
 
 ---
 
@@ -24,32 +24,31 @@
 ### 2.2 Set‑Up
 ```bash
 # 1️⃣ Clone the repo
-git clone <your-repo-url>
-cd <your-repo-name>
+git clone https://github.com/developer-2046/PCDC-Using-LSTM/
+cd PCDC-Using-LSTM
 
 # 2️⃣ Add the pre-trained artifacts to the repo root
 #    pcdcnet_lstm_model.pth    – model weights
 #    evaluation_lstm_data.pt   – test tensors
-#    scaler_lstm.gz            – fitted StandardScaler
 
 # 3️⃣ Run the evaluation
-python evaluate.py
+LSTM.ipynb
 ```
 
 ### 2.3 Expected Output
 ```
 --- Final Evaluation Metrics ---
-Test MAE  :  <low value>
-Test RMSE :  <low value>
-Test R²   :  0.8720
+Test MAE  :  <Value>
+Test RMSE :  <Value>
+Test R²   :  <Value>
 --------------------------------
 ```
 
 ---
 
 ## 3 | Results & Visualizations
-* **Graph 1** (`plots/graph1.png`) — *Training & Validation Loss*: shows steady convergence and minimal overfitting.  
-* **Graph 2** (`plots/graph2.png`) — *Prediction vs. Actual (Test Set)*: model outputs closely track the ground‑truth PM<sub>2.5</sub> curve.
+* **Graph 1** (`plots/graph1.png`) — *Prediction vs. Actual (Test Set)*: model outputs closely track the ground‑truth PM<sub>2.5</sub> curve.  
+* **Graph 2** (`plots/graph2.png`) — *Decrease in MAE*.
 
 ---
 
